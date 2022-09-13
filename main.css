@@ -124,7 +124,7 @@ header {
 }
 
 .qutos {
-    font-size: 5rem;
+    font-size: 4.0rem;
     margin-top: 10rem;
     line-height: 6.5rem;
     margin-left: 5rem;
@@ -132,7 +132,7 @@ header {
     flex: 1 1 40rem;
     -webkit-text-stroke-width: 0.1rem;
     -webkit-text-stroke-color: black;
-    
+
 }
 
 .pole {
@@ -143,9 +143,76 @@ header {
     -webkit-background-clip: text;
     color: transparent;
     font-family: 'Roboto Mono', monospace;
+    letter-spacing: -0.4rem;
 }
 
 #rocket {
-    margin-top: 5rem;
+    margin-top: 4rem;
+    margin-left: -6rem;
     flex: 1 1 30rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+span img {
+    z-index: 100;
+    width: 25rem;
+    height: 25rem;
+
+}
+
+.container .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    /* background-color: chartreuse; */
+    /* background-color: chartreuse; */
+    border-radius: 85%;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 10%;
+    padding: 1.2rem;
+    position: relative;
+    /* animation: animate 2s linear infinite; */
+}
+
+.container .loader span {
+    
+    border-radius: 85%;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 10%;
+    padding: 2rem;
+    background: linear-gradient(90deg, #f4b426, #fbc44b, rgb(211, 202, 202));
+
+}
+.container .loader::before {
+    z-index: -1;
+    content: '';
+position:absolute;
+top:0px;
+left: -50px;
+width: 450%;
+height:150%;
+left:0px;
+background:linear-gradient(to left top,transparent,rgb(0, 0, 0));
+background-repeat: no-repeat;
+animation: animate 10s linear infinite; 
+}
+
+
+
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
