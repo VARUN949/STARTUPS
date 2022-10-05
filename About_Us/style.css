@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background: linear-gradient(90deg, #f4b426, #fbc44b, rgb(211, 202, 202));
+}
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.box1{
+    background-image: url("orange.jpg");
+    height: 348px;
+    background-size: cover;
+    -webkit-clip-path: polygon(113% 0,120% 81%,54% 107%,0 83%,0 0);
+    position: absolute;
+    width: 106%;
+    
+}
+.box1 img{
+    height: 64%;
+    margin-left: 16%;
+}
+.box2{
+    background: linear-gradient(90deg, #f4b426, #fbc44b, rgb(211, 202, 202));
+    width: 70%;
+    margin: auto;
+    box-shadow: 2px 2px 32px black;
+    z-index: 1;
+    margin-top: 214px;
+    height: 33rem;
+    border-radius: 43px;
+    text-align: center;
+}
+hr
+{
+    box-shadow: 2px 2px 2px black;
+    color: black;
+}
+
